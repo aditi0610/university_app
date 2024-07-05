@@ -60,6 +60,7 @@ class StudentsController < ApplicationController
      if current_user != @student
       flash[:notice] = "You can only edit your own profile"
        redirect_to student_path(current_user) 
+      end 
     end
    
 
